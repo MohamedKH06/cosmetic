@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&display=swap");
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style-type: none;
+}
+* a{
+    line-height: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+:root {
+    --color-primary: #ff6565;
+    --color-secondary: #231942;
+    --color-text: #262626;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+@media only screen and (max-width: 75em) {
+    html {
+        font-size: 56.25%; /* 1rem = 9px ; 8px / 16px = 56.25% */
+    }
+}
+
+@media only screen and (max-width: 56.25em) {
+    html {
+        font-size: 50%; /* 1rem = 8px ; 8px / 16px = 50% */
+    }
+}
+
+@media only screen and (min-width: 112.5em) {
+    html {
+        font-size: 75%; /* 1rem = 12px ; 12px / 16px = 75% */
+    }
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Inter", sans-serif;
+    color: #364958;
+}
+
+.container {
+    max-width: 1733px;
+    margin: 0 auto;
+}
+
+.container-padding {
+    padding-left: 15rem;
+    padding-right: 15rem; 
+}
+
+/* Start header */
+
+/**************** START Header Top **********/
+.menu-fixed {
+    position: fixed !important;
+    width: 100vw;
+    z-index: 90 !important;
+    background-color: #fff;
+    padding: 20px 40px 10px !important;
+    margin: 0;
+    max-width: 100%;
+    top: 0;
+  }
+  
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4rem;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  
+  .header-top svg {
+    width: 20px;
+  }
+  
+  .header-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .header-right svg {
+    cursor: pointer;
+  }
+  
+  .header-right svg:not(:last-child) {
+    margin-right: 4rem;
+  }
+  
+  .header-left {
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+  
+  .header-menu {
+    flex: 0.75;
+    padding-right: 10rem;
+    padding-left: 5rem;
+    height: 6rem;
+  }
+  
+  .header-logo {
+    flex: 0.25;
+  }
+  
+  .header-logo img {
+    width: 9.5rem;
+  }
+  
+  .header-menu ul,
+  .header-menu li {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+  }
+  
+  .header-menu ul li a {
+    color: var(--color-text);
+    font-weight: 500;
+  }
+  
+  .header-menu ul li.active a,
+  .header-menu ul li:hover a {
+    color: var(--color-primary);
+  }
+  
+  /**************** END Header Top **********/
+/* End header */
+/***** Start section contact******/
+
+.contact{
+    margin: 50px 0;
+}
+
+
+.contact-zone{
+    margin-top: 30px;
+    margin-bottom:30px;
+    padding: 65px 0 0;
+}
+.contact-img img{
+    border-radius:0 30px 30px 0 ;
+}
+.contact-main{
+    display: flex;
+}
+/***********Start contact-top*********/
+.contact-top .titile{
+    font-size: 50px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    color: #231942;
+}
+
+.contact-top p{
+    width: 450px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.contact-top{
+    margin-bottom: 60px;
+}
+.line{
+    width: 50px;
+    height: 2px;
+    background-color: #cecece;
+}
+/***********End contact-top*********/
+/***********Start contact-buttom*********/
+.contact-top,.contact-buttom{
+    padding:30px 60px ;
+}
+.form-row{
+    display: flex;
+    margin-bottom: 60px;
+}
+.forst-n{
+    margin-right: 55px;
+}
+.forst-name, .last-name{
+    width: 240px;
+}
+.forst-name,.last-name, .email input{
+    color: #3f3f3f;
+    font-size: 12px;
+    font-weight: 500;
+    border-width: 0 0 1px;
+    border-color: #b9b9b9;
+    padding-bottom: 16px;
+    outline: none;
+}
+.emaill{
+    width: 100%;
+}
+.email{
+    margin-bottom: 60px;
+}
+.text-msj{
+    width:100% ;
+    height: 130px;
+    color: #3f3f3f;
+    font-size: 12px;
+    font-weight: 500;
+    border-width: 0 0 1px;
+    border-color: #b9b9b9;
+    padding-bottom: 16px;
+    resize: none;
+    margin-bottom: 40px;
+    outline: none;
+}
+.btn button{
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: #ff6565;
+    border: 1px solid ;
+    padding:15px 40px 15px 40px;
+    border-radius: 50px;
+    text-transform:uppercase;
+    letter-spacing: 3px;
+}
+/***********End contact-buttom*********/
+/***** End section contact******/
+/***** Start section p******/
+
+.container-info{
+    background: #fffaef;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 41px 0;
+}
+.info img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.info a{
+    display: block;
+    color: black;
+    margin-bottom: 7px;
+
+}
+.info:nth-child(2){
+    border-left: 2px solid #e0e0e0;
+    border-right: 2px solid #e0e0e0;
+}
+.container-info .info{
+    width: 33.3%;
+    text-align: center;
+}
+/**************** Start Footer **********/
+.footer-main{
+    padding: 200px 0;
+    margin: 0 70px;
+}
+.row{
+    display: flex;
+    width: 1200px;
+    height: 200px;
+}
+
+.row-right-footer{
+width: 400px;
+height: 200px;
+}
+.row-right-content{
+    width: 370px;
+    height: 190px;
+}
+.row-right-content .row-logo img{
+margin-bottom: 38px;
+}
+.row-right-content .end-p{
+    line-height: 30px;
+}
+.row-center{
+    width: 500px;
+    height: 200px;
+}
+.row-center-content{
+    width: 470px;
+    height: 200px;
+}
+.row-center-content h4{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+.row-center-content ul{
+    display: flex;
+    flex-wrap: wrap;=
+}
+.row-center-content li {
+    color: #364958;
+    font-size: 16px;
+    position: relative;
+    margin-bottom: 30px;
+    width: 33%;
+}
+.row-left-footer{
+    width: 300px;
+    height: 200px;
+}
+.row-left-footer-content{
+    width: 270px;
+    height: 94px;
+}
+.row-left-footer-content h4{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+.social{
+    display: flex;
+}
+.social .fc svg{
+    width: 15px;
+}
+.social .pi svg{
+    width: 20px;
+}
+.social .tw {
+    font-size: 21px;
+}
+.social .tw svg{
+    width: 25px;
+}
+.social a svg:hover{
+fill: #ff6565;
+}
+.social .fc {
+    margin-left: 60px;
+}
+.social .pi {
+    margin-left: 60px;
+}
+.row-center-content ul li a:hover{
+    color: #ff6565;
+    text-decoration: underline !important;
+}
+/**************** End Footer **********/
